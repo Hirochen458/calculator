@@ -484,7 +484,7 @@ The application includes custom exception handling to provide meaningful error m
 
 ### Postman Request Example
 
-[Postman Request](Docs/images/POSTMAN_SCREENSHOT.png)
+![Postman Request](Docs/images/POSTMAN_SCREENSHOT.png)
 
 ---
 
