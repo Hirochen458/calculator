@@ -351,7 +351,7 @@ curl -X DELETE "http://localhost:8080/calculations/1"
 
 5. **Send the Request** and observe the response.
 
-![Postman Example](docs/images/postman_example.png)
+![Postman Example](Docs/images/Postman Request Example)
 
 ---
 
@@ -482,13 +482,9 @@ The application includes custom exception handling to provide meaningful error m
 
 ## Screenshots
 
-### 1. H2 Console
+### Postman Request Example
 
-![H2 Console](docs/images/h2_console.png)
-
-### 2. Postman Request Example
-
-![Postman Request](docs/images/postman_request.png)
+![Postman Request](Docs/images/Postman Request Example)
 
 ---
 
