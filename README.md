@@ -2,7 +2,6 @@
 
 A simple calculator application built with Spring Boot that provides RESTful APIs for basic arithmetic operations and supports CRUD operations for calculations. The application uses an in-memory H2 database to store calculation history and demonstrates exception handling and data validation.
 
-![Calculator Application Banner](docs/images/banner.png)
 
 ## Table of Contents
 
