@@ -351,8 +351,8 @@ curl -X DELETE "http://localhost:8080/calculations/1"
 
 5. **Send the Request** and observe the response.
 
-![Postman Example](Docs/images/Postman Request Example)
-
+![Postman Example](Docs/images/POSTMAN_SCREENSHOT.png)
+s
 ---
 
 ## Exception Handling
@@ -484,7 +484,7 @@ The application includes custom exception handling to provide meaningful error m
 
 ### Postman Request Example
 
-![Postman Request](Docs/images/Postman Request Example)
+[Postman Request](Docs/images/POSTMAN_SCREENSHOT.png)
 
 ---
 
