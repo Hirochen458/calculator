@@ -1,6 +1,6 @@
 package com.example.calculator.calculator;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.calculator.exceptions.InvalidOperationException;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
@@ -18,12 +18,15 @@ public class Calculator {
     public Number calculate(Operation op, Number num1, Number num2) {
         OperationStrategy strategy = operationStrategies.get(op);
         if (strategy == null) {
-            throw new UnsupportedOperationException("Operation not supported: " + op);
+            throw new InvalidOperationException(op);
         }
         return strategy.apply(num1, num2);
     }
 
     public Calculator start(Number initialValue) {
+        if (initialValue == null) {
+            throw new IllegalArgumentException("Initial value cannot be null.");
+        }
         this.currentValue = initialValue;
         return this;
     }
@@ -31,6 +34,9 @@ public class Calculator {
     public Calculator perform(Operation op, Number num) {
         if (this.currentValue == null) {
             throw new IllegalStateException("Calculator not started. Call start() with an initial value.");
+        }
+        if (num == null) {
+            throw new IllegalArgumentException("Operand cannot be null.");
         }
         this.currentValue = calculate(op, this.currentValue, num);
         return this; // Enable chaining

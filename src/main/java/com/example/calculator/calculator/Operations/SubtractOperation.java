@@ -1,4 +1,4 @@
-package com.example.calculator.calculator.strategies;
+package com.example.calculator.calculator.Operations;
 
 import com.example.calculator.calculator.OperationStrategy;
 import org.springframework.stereotype.Component;

@@ -2,7 +2,7 @@ package com.example.calculator.calculator.config;
 
 import com.example.calculator.calculator.Operation;
 import com.example.calculator.calculator.OperationStrategy;
-import com.example.calculator.calculator.strategies.*;
+import com.example.calculator.calculator.Operations.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
